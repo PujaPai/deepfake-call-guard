@@ -1,0 +1,110 @@
+/* ===== BASE ===== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+}
+
+/* ===== HEADER ===== */
+.header {
+    text-align: center;
+    padding: 20px;
+    background: #111827;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* ===== LAYOUT (GRID) ===== */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+    display: grid;
+    gap: 20px;
+}
+
+/* ===== CARDS ===== */
+.card {
+    background: #111827;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+    transition: 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+/* ===== INPUTS ===== */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0;
+    border-radius: 8px;
+    border: none;
+    background: #1f2937;
+    color: white;
+}
+
+/* ===== BUTTON ===== */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background: #2563eb;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #1d4ed8;
+    transform: scale(1.02);
+}
+
+/* ===== TABLE ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #1f2937;
+    text-align: center;
+}
+
+/* ===== LOGS ===== */
+pre {
+    background: #0b1220;
+    padding: 10px;
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+/* ===== DECISION COLORS ===== */
+.allow {
+    color: #22c55e;
+    font-weight: bold;
+}
+
+.review {
+    color: #f59e0b;
+    font-weight: bold;
+}
+
+.block {
+    color: #ef4444;
+    font-weight: bold;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
